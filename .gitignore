@@ -216,3 +216,43 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# =========================
+# Project-specific ignores
+# =========================
+
+# Local datasets
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Trained models / checkpoints
+models/*
+!models/.gitkeep
+
+# ML checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Hugging Face / model cache
+.cache/
+huggingface/
+hf_cache/
+
+# Experiment outputs
+runs/
+wandb/
+mlruns/
+
+# Local secrets
+.env
+
+# Install packages
+*.deb
+
+# IDE
+.vscode/
+.idea/
